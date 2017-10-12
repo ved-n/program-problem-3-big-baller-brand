@@ -22,13 +22,13 @@ using namespace std;
 
 void pause() {
 
-cout << "Press any key to continue . . .";
+	cout << "Press any key to continue . . .";
 
-while (!_kbhit());
+	while (!_kbhit());
 
-_getch();
+	_getch();
 
-cout << '\n';	
+	cout << '\n';
 }
 
 // MAIN
@@ -36,35 +36,34 @@ cout << '\n';
 void main() {
 
 	// defining and assigning variables
-	int x; 
-	int a; 
-	int b;
-	int c;
+	int User_Number; //Use semi-representative varibales
+	int First_Digit; //Use semi-representative varibales
+	int Second_Digit; //Use semi-representative varibales
+	int Third_Digit; //Use semi-representative varibales
 	int y;
 
 	cout << "Please enter  3 digit number . . ." << endl;
-	cin >> x; // generate random 3 digit numbers... ex: '391'
-		// MAIN
-		//Defining variables
-	a = x / 100; 
+	cin >> User_Number; // generate random 3 digit numbers... ex: '391'
+			  // MAIN
+			  //Defining variables
+	First_Digit = User_Number / 100;
 
-	y = x / 10;
+	y = User_Number / 10;
 
-	b = y % 10;
+	Second_Digit = y % 10;
 
-	c = x % 10;
+	Third_Digit = User_Number % 10;
 	// user queries
-		cout << x << endl;
-	if (a > b && b > c) {
+	cout << User_Number << endl;
+	if (First_Digit > Second_Digit && Second_Digit > Third_Digit) {
 		cout << "descending" << endl;
-}
-	else if (a < b && b < c) {
+	}
+	else if (First_Digit < Second_Digit && Second_Digit < Third_Digit) {
 		cout << "ascending" << endl;
-}
+	}
 	else {
 		cout << "neither" << endl;
+	}
 
-}
-
-		pause(); // pauses to see the displayed text
+	pause(); // pauses to see the displayed text
 }
