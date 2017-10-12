@@ -1,10 +1,10 @@
 /*
 
-Your Name - Date Period
+Jason Rogers & Cody Ho - 10/12/2017 Period 3
 
-Assignment Name : *
+Assignment Name : Three_Digit_Ascending_Descending_Selection
 
-Brief Description of the Assignment
+Brief Description of the Assignment : Typing in a 3 digit integer and determining if it is ascending, descending or neither.
 
 */
 
